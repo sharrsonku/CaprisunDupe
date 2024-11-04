@@ -51,9 +51,9 @@ https://www.capri-sun.com/nl/ons-verhaal/
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+*hij kan verspringen
 *de meeste fotos hebben geen alt attribute
 *bij een link zegt het niet waar het heen gaat
-
 </details>
 
 
@@ -84,7 +84,7 @@ https://www.capri-sun.com/nl/ons-verhaal/
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  die halve boog krijgen en later overllopen in mijn 1ste section
+  die halve boog krijgen en later overlopen in mijn 1ste section
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -127,13 +127,12 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
+Ik had moeite met het schalen van de grids. ze kwamen niet zoals ik wou in beeld.
+Na ee paar keer over mijn code heen kijken zag ik dat ik een typfout had gemaakt waardoom de grid niet reageerde.
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Audrey     | Kaylee          |  Jelle    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -143,15 +142,14 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+1. Gebruik semantische HTML: Maak gebruik van <section>-elementen in plaats van <div>-elementen om de structuur duidelijker te maken.
+2. Consistentie in class-namen: Zorg ervoor dat de naamgeving van je classes door de hele code consistent blijft.
+3. Beperk het gebruik van <br>-tags: Stijl je tekst liever met margin voor witruimte en text-align: center om tekst te centreren.
+4. Plaats je <script>-tag in de <head>: Zorg ervoor dat je scripts bovenaan de pagina worden geplaatst.
+5. Structuur van <header> en <footer>: Zorg ervoor dat zowel het <footer>- als het <header>-element binnen de <body>-tag staan.
+6. Gebruik slechts één <h1>-tag: Beperk het gebruik van <h1> tot één keer per pagina voor een duidelijke hiërarchie in de kopteksten.
 
 </details>
-
-
-
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -160,12 +158,9 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ mijn navvoor mobiele telefoon kwam niet goed tevoorschijn.
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
@@ -174,9 +169,7 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
+Ik heb alles gekregen waar ik het wil hebben, alleen werkt mijn slider niet 100%. hier ga ik dus naar kijken. Ik kan de 1 ste slider niet verder klikken maar de 2e wel ik weet niet wat er fout aan is.
   ### Agenda voor meeting
   samen met je groepje opstellen
 
@@ -189,11 +182,7 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+hier was ik niet bij ik zat ziek thuis.
 
 </details>
 
@@ -217,7 +206,7 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De animaties toevoegen is mij niet gelukt. Ik kreeg sommige wel in beeld maar dan werden alle andere elemnten verschoven.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -235,7 +224,7 @@ Hier zijn de punten uit je tekst zonder wijzigingen:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. 
   2. bron 2
   3. ...
 

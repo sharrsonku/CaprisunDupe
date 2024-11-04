@@ -1,147 +1,243 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="jouw naam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Caprisun Dupe</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <body id="home">
+    <!-- Achtergrondcontainer -->
+    <div class="background-image"></div>
 
-	<title>Caprisun Dupe</title>
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/capri-sun-logo.png" alt="Capri-Sun logo" />
+      </div>
 
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
-</head>
+      <!-- Navigatiebalk -->
+      <nav>
+        <ul class="desktop-menu">
+          <li class="hideOnMobile"><a href="producten">PRODUCTEN</a></li>
+          <li class="hideOnMobile">
+            <a href="#" class="dropdown-toggle">VERANTWOORDELIJKHEID</a>
+            <ul class="dropdown" style="display: none">
+              <li><a href="duurzaamheid.html">Duurzaamheid</a></li>
+              <li><a href="ingredienten.html">Ingrediënten</a></li>
+              <li><a href="onzepartners.html">Onze partners</a></li>
+            </ul>
+          </li>
+          <li class="hideOnMobile"><a href="ons verhaal">ONS VERHAAL</a></li>
+          <li class="hideOnMobile">
+            <a href="veelgestelde vragen">VEELGESTELDE VRAGEN</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="neem contact op">NEEM CONTACT OP</a>
+          </li>
+          <button
+            class="icon-circle mobile-icon"
+            aria-label="Open menu"
+            onclick="toggleSidebar()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 12h18M3 6h18M3 18h18"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </ul>
 
-<body>
-	<header>
-		<div class="logo">
-			<img src="images/capri-sun-logo.png" alt="">
-		</div>
+        <!-- Sidebar-menu voor mobiel -->
+        <ul class="sidebar" aria-label="Mobiele navigatie">
+          <li class="icon-circle mobile-icon">
+            <button aria-label="Sluit menu" onclick="toggleSidebar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50px"
+                height="50px"
+                viewBox="0 -960 960 960"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li><a href="producten">PRODUCTEN</a></li>
+          <li>
+            <a href="#" class="dropdown-toggle">VERANTWOORDELIJKHEID</a>
+            <ul class="dropdown">
+              <li><a href="duurzaamheid.html">Duurzaamheid</a></li>
+              <li><a href="ingredienten.html">Ingrediënten</a></li>
+              <li><a href="onzepartners.html">Onze partners</a></li>
+            </ul>
+          </li>
+          <li><a href="ons verhaal">ONS VERHAAL</a></li>
+          <li><a href="veelgestelde vragen">VEELGESTELDE VRAGEN</a></li>
+          <li><a href="neem contact op">NEEM CONTACT OP</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="container-home">
+        <div class="text-container">
+          <p class="flag-welkom">WELKOM</p>
+          <h2 class="lines">
+            <span class="line H">The taste</span>
+            <span class="line H">of fun</span>
+          </h2>
+          <span class="button-contain">
+            <button>Ontdek meer</button>
+          </span>
+        </div>
+        <video muted loop playsinline autoplay poster>
+          <source
+            src="https://www.capri-sun.com/_resources/themes/capri-sun/dist/version1724937287/static/sunny-video/sunny-video.webm"
+            type="video/mp4"
+          />
+        </video>
+      </section>
 
-		<nav style="display: none;">
-			<ul>
-				<li>
-					<a href="producten">Producten</a>
-					<ul class="dropdown">
-						<li><a href="ziealleproducten .html">Product 1</a></li>
-						<li><a href="core.html">core</a></li>
-						<li><a href="zero.html">zero</a></li>
-						<li><a href="330ml.html">330ml</a></li>
-						<li><a href="siroop.html">siroop</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="verantwoordelijkheid">Verantwoordelijkheid</a>
-					<!-- Submenu voor Verantwoordelijkheid -->
-					<ul class="dropdown">
-						<li><a href="duurzaamheid.html">Duurzaamheid</a></li>
-						<li><a href="ingredienten.html">Ingrediënten</a></li>
-						<li><a href="onzepartners.html">Onze partners</a></li>
-					</ul>
-				</li>
-				<li><a href="ons verhaal">Ons Verhaal</a></li>
-				<li><a href="veelgestelde vragen">Veelgestelde Vragen</a></li>
-				<li><a href="neem contact op">Neem Contact Op</a></li>
-			</ul>
-		</nav>
-	</header>
+      <section class="ontdek">
+        <h2 class="text-center">ONTDEK ONZE PRODUCTEN</h2>
+        <span class="headerline">
+          <img src="images/headerline.svg" alt="" />
+        </span>
 
+        <div class="slider-container3">
+          <div class="wrapper">
+            <div class="slider-container">
+              <div class="slider4">
+                <img src="images/orangenoadded.png" alt="Foto 1" />
+                <img src="images/siroop1.png" alt="Foto 2" />
+                <img src="images/330ml.png" alt="Foto 3" />
+                <img src="images/zero.png" alt="Foto 4" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+          <div class="navigation-buttons">
+            <button onclick="goToSlide(0)" class="nav-button"></button>
+            <button onclick="goToSlide(1)" class="nav-button"></button>
+            <button onclick="goToSlide(2)" class="nav-button"></button>
+            <button onclick="goToSlide(3)" class="nav-button"></button>
+          </div>
+        </div>
+      </section>
 
-	<div class="container-home">
-		
-		<p class="flag-welkom">welkom</p>
-		<h1 class="text-center">
-			The taste
-			<br>
-			of fun
-		</h1>
+      <section class="TTO">
+        <h2 class="text-center0">
+          <span class="line">THE TASTE</span>
+          <span class="line">OF FUN</span>
+        </h2>
+        <span class="headerline">
+          <img src="images/headerline.svg" alt="" />
+        </span>
+        <p class="main-text">
+          De recepten voor onze producten zijn eenvoudig. Kijk maar naar de
+          ingrediëntenlijst op onze verpakking. Die is kort. Want in onze
+          drankjes zitten geen kleurstoffen, smaakstoffen en bewaarmiddelen.
+          Capri-Sun heeft overal ter wereld een iconische smaak, volgens een
+          recept dat aansluit bij de lokale voorkeur.
+        </p>
+      </section>
 
-			<div class="boog">
-				<video muted loop playsinline autoplay poster>
-					<source
-						src="https://www.capri-sun.com/_resources/themes/capri-sun/dist/version1724937287/static/sunny-video/sunny-video.webm"
-						type="video/mp4">
-				</video>
-			</div>
-	</div>
+      <section class="facts-row">
+        <img src="images/icon-1.svg" alt="" />
+        <img src="images/icon-2-v2.svg" alt="" />
+        <img src="images/icon-3.svg" alt="" />
 
+        <h2>GEEN KLEURSTOFFEN, SMAAKSTOFFEN & BEWAARMIDDELEN</h2>
+        <h2>nu verkrijgbaar ZONDER TOEGEVOEGDE SUIKERS</h2>
+        <h2>EEN FRIS DRANKJE VOOR ONDERWEG!</h2>
+        <h2>LEKKER FRUITIG, LEKKER FRIS!</h2>
+        <p>
+          Nieuw: Capri-Sun Zero bevat alleen natuurlijke suiker uit fruit en
+          caloriearme zoetstoffen.
+        </p>
+        <p>Voor zorgeloze momenten waarop het lekker makkelijk mag zijn.</p>
+        <p>
+          Gemaakt met vruchtensap en bronwater, zonder kleurstoffen,
+          smaakstoffen en bewaarmiddelen.
+        </p>
+      </section>
 
-	
-	
-	
-<div class="main">
-	<section>
-		<h2 class="text-center">Ontdek onze producten</h2>
-		<div class="container-slider">
-<div class="content-slider">
+      <section class="card-container">
+        <h2>RESPONSIBILITY</h2>
+        <div class="card">
+          <h2>Veelgestelde vragen</h2>
+          <p>
+            Heb je vragen? Wij hebben antwoorden! Duik in onze veelgestelde
+            vragen voor snelle antwoorden en een spatje plezier.
+          </p>
+          <button class="button">Ontdek meer</button>
+          <img src="images/backgroundcard.png" alt="" />
+        </div>
 
-	<div class="container-card">
-		<div class="content-card">
-			<div class="image">
-				<img src="images/orangenoadded.png" alt="">
-			</div>
-		</div>
+        <div class="con">
+          <div class="card">
+            <img src="images/Layer_1.svg" alt="" />
+            <h2>Ingrediënten</h2>
+            <p>
+              Ontdek de ingrediënten die aan de oorsprong liggen van elke
+              lekkere Capri-Sun.
+            </p>
+            <button class="button">Ontdek meer</button>
+          </div>
 
-	</div>
-</div>
+          <div class="card">
+            <img src="images/blad.svg" alt="" />
+            <h2>Duurzaamheid</h2>
+            <p>
+              Er is geen Planet B. Daar zijn we ons bij Capri-Sun van bewust.
+              Daarom zetten we ons in om onze impact op het milieu te
+              minimaliseren.
+            </p>
+            <button class="button">Ontdek meer</button>
+          </div>
+        </div>
+      </section>
 
+      <!-- Card-based slider -->
+      <section class="slider-container2">
+        <h2 class="text-center">PRAAT MEE!</h2>
+        <p>Ontdek, connect en deel het plezier.</p>
 
-		</div>
-	</section>
-	<section>
-		<p class="main-text">
-			De recepten voor onze producten zijn eenvoudig.
-			Kijk maar naar de ingrediëntenlijst op onze verpakking. Die is kort.
-			Want in onze drankjes zitten geen kleurstoffen, smaakstoffen en bewaarmiddelen.
-			Capri-Sun heeft overal ter wereld een iconische smaak, volgens een recept dat aansluit bij de lokale
-			voorkeur.
-		</p>
-	</section>
-	<section>
-		<h2 class="text-center">GEEN KLEURSTOFFEN, SMAAKSTOFFEN & BEWAARMIDDELEN</h2>
-	</section>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
 
-	<div class="facts-row">
-		<div class="column">
-			<h2 class="text-center">
-		
-				<span>ZONDER TOEGEVOEGDE SUIKERS</span>
-			</h2>
-			<p class="text-center">
-				<span>Nieuw: Capri-Sun Zero bevat alleen natuurlijke suiker uit fruit en caloriearme zoetstoffen.</span>
-			</p>
-		</div>
-
-		<h2 class="text-center">
-			<span>VOOR ONDERWEG</span>
-		</h2>
-		<p class="text-center">
-			<span>Voor zorgeloze momenten waarop het lekker makkelijk mag zijn. </span>
-		</p>
-		<h2 class="text-center">
-			<span>LEKKER FRUITIG,</span>
-			
-	<span>LEKKER FRIS!</span>
-		</h2>
-		<p class="text-center">
-			<span>Gemaakt met vruchtensap en bronwater, zonder kleurstoffen, smaakstoffen en bewaarmiddelen.</span>
-		</p>
-		<span>Responsibility</span>
-	</div>
-		<script defer src="scripts/script.js"></script>
-
-		<img src="images/contact.png" alt="">
-
-		<footer>
-			<div class="logo">
-				<img src="images/capri-sun-logo.png" alt="">
-			</div>
-		</footer>
-</body>
-
-
+        <div class="slider-container1">
+          <div class="slider1">
+            <img src="images/1caro.png" alt="Afbeelding 1" />
+            <img src="images/2caro.png" alt="Afbeelding 2" />
+            <img src="images/3caro.png" alt="Afbeelding 3" />
+            <img src="images/4caro.png" alt="Afbeelding 4" />
+            <img src="images/5caro.png" alt="Afbeelding 5" />
+            <img src="images/6caro.png" alt="Afbeelding 6" />
+          </div>
+        </div>
+        <p>Accepteer cookies om TikTok-inhoud te zien.</p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="contactpopup" id="contactPopup">
+        <img src="images/contact.png" alt="Contact afbeelding" />
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
